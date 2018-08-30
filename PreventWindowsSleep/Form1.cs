@@ -15,7 +15,7 @@ namespace PreventWindowsSleep
         private log4net.ILog log = log4net.LogManager.GetLogger("WindowsFormLogger");
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); // init
         }
 
         private void btnExit_Click(object sender, EventArgs e)
