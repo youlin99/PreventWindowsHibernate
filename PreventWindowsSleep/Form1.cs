@@ -23,13 +23,12 @@ namespace PreventWindowsSleep
             Application.Exit();
         }
 
-
         private void TriggerTimer()
         {
             timer.Enabled = false;
             int interval;
             int defaultInterval = 5;
-            int unit = 60 * 1000; // ms
+            int unit = 60 * 1000; // ms 
             if (!int.TryParse(this.textBox1.Text, out interval))
             {
                 interval = defaultInterval;
