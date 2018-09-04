@@ -50,8 +50,8 @@ namespace PreventWindowsSleep
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            WindowsSleep.PreventSleep();
-            WindowsSleep.ResetSleepTimer();
+            WindowsSleep.PreventSleep(true);
+            WindowsSleep.ResetSleepTimer(true);
             log.Info("Prevent + Reset");
         }
 
